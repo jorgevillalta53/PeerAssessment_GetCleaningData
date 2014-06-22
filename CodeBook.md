@@ -56,11 +56,11 @@ SCRIPT's VARIABLES:
 
 - names(x_test) & names(x_train) : store the name that we extract from feature file
 - x_test_f &  x_train_f: store the combine information of subject, y test/train and x test/train
-- x_all: the complete info that we merged with train and test data
+- x_all: the complete info that we merged with train and test data (10299 rows & 563 variables)
 - features_wanted: extract the variable of mean-desvest est info
 - col_index: store the index of the mean-desvest variable
-- x_general: store the tidy data set with only the information that we are going to analyze
-- x_final: store the tidy data & the activities information (FINAL DITY DATA SET)
+- x_general: store the tidy data set with only the information that we are going to analyze (10299 rows & 68 variables)
+- x_final: store the tidy data & the activities information (FINAL TIDY DATA SET) (10299 rows & 69 variables)
 
 - x_melt : store the data melt that we are going to summarize
-- summ_X: store de final summarize data
+- summ_X: store de final summarize data (180 observations & 68 variables)
