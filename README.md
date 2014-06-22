@@ -20,6 +20,13 @@ The script doesn't use a parameters, only execute the script
 when the work finish it give you a message telling you :  "Process finish, file creates on /UCI HAR Dataset/ "
 It create a file summ_X.txt with the summarize information
 
+For understanding how the script works you can read 
+
+- THE CODE BOOK 
+
+Here in the repo
+
+
 Enjoy it!
 
 Thanks for all
