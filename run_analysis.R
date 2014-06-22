@@ -11,21 +11,21 @@ run_analysis <- function() { ## initial function
  ## read all the files that is containt in the 
  ## directory of "UCI HAR Dataset"
   #####################################################
-  ## This are the files that contains the general information
-  features<-read.table("UCI HAR Dataset/features.txt")
-  act_label<-read.table("UCI HAR Dataset/activity_labels.txt")
+  ## Are the files that contains the general information
+  features<-read.table("UCI HAR Dataset/features.txt") ## general variables info
+  act_label<-read.table("UCI HAR Dataset/activity_labels.txt") ## general activities info
   ## This are the files that contains the test information
-  y_test<-read.table("UCI HAR Dataset/test/y_test.txt")
-  x_test<-read.table("UCI HAR Dataset/test/x_test.txt")
-  subject_test<-read.table("UCI HAR Dataset/test/subject_test.txt")
+  y_test<-read.table("UCI HAR Dataset/test/y_test.txt") ## Information of the activities for each row
+  x_test<-read.table("UCI HAR Dataset/test/x_test.txt") ## measures that it made for test activities
+  subject_test<-read.table("UCI HAR Dataset/test/subject_test.txt") ## subject that made the activities
   ## This are the files that contains the training information
   y_train<-read.table("UCI HAR Dataset/train/y_train.txt")
   x_train<-read.table("UCI HAR Dataset/train/x_train.txt")
   subject_train<-read.table("UCI HAR Dataset/train/subject_train.txt")
   #######################################################
   ## PUTTING THE NAMES OF THE COLUMNS (VARIABLES)
-  names(x_test)<-features[,2]
-  names(x_train)<-features[,2]
+  names(x_test)<-features[,2] ## putting the column name on the test data frame
+  names(x_train)<-features[,2] ## putting the column name on the train data frame
   #######################################################
   ## CONSTRUCT THE 2 COMPLETE DATA FRAMES (TRAINING AND TEST)
   x_test_f<-cbind(subject_test[,1],y_test,x_test) ## join subject, activiy & data info
