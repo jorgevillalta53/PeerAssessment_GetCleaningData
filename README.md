@@ -6,11 +6,11 @@ The run_analysis.R it's a script that made a summarize of the data from Human Ac
 - For make the script run only need: 
 -----------------------------------------
 
-The data you can download here:
+The data that you can download here:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
  
-You have to download the zip file and store in the R working directory.
+You have to download the zip file and extract it in the R working directory.
 
 The main folder name is: UCI HAR Dataset
 
